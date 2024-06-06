@@ -1,6 +1,7 @@
 ---
 import Eclipse from '../components/Eclipse.astro';
 import Navbar from '../components/Navbar.astro';
+import Home from '../components/Home.astro'
 
 interface Props {
 	title: string;
@@ -19,9 +20,10 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="font-spaceGrotesk">
 		<Navbar />
-		<slot />
+		<Home />
+		<!-- <slot /> -->
 		<Eclipse />
 	</body>
 </html>
