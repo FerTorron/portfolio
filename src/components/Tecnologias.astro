@@ -1,69 +1,66 @@
 ---
+const tecnologies = [
+    {
+        name: 'HTML',
+        icon: './icons/html.png'
+    },
+    {
+        name: 'CSS',
+        icon: './icons/css.png'
+    },
+    {
+        name: 'JS',
+        icon: './icons/js.png'
+    },
+    {
+        name: 'SASS',
+        icon: './icons/sass.png'
+    },
+    {
+        name: 'React',
+        icon: './icons/react.png'
+    },
+    {
+        name: 'NodeJS',
+        icon: './icons/nodejs.png'
+    },
+    {
+        name: 'MongoDB',
+        icon: './icons/mongodb.png'
+    },
+    {
+        name: 'Express',
+        icon: './icons/express.png'
+    },
+    {
+        name: 'Boostrap',
+        icon: './icons/bootstrap.png'
+    },
+    {
+        name: 'TailwindCSS',
+        icon: './icons/tailwind.png'
+    },
+    {
+        name: 'GIT',
+        icon: './icons/git.png'
+    },
+    {
+        name: 'MySQL',
+        icon: './icons/mysql.png'
+    },
+]
 ---
 
 <div class="w-[100%] mt-[100px] flex items-center justify-between px-[147px]">
     <div class="flex items-start justify-center flex-col gap-[50px]">
         <span class="text-[2.5rem] text-[#EFF5FF]  font-bold flex items-center gap-3 justify-center"><img class="w-[35px] h-[35px]" src="./books.svg" alt="Icono de Libros"> Tecnologías</span>
     <div class="flex items-center justify-start gap-[50px] w-[80%] flex-wrap">
-        <div class="w-[115px] h-[115px] flex items-center flex-col gap-[5px] justify-center bg-[#9AB6FF] border-[#9AB6FF] border-[1px] bg-opacity-[30%] rounded-[20px] shadow-[rgba(0,0,0,0.25)_3px_5px]">
-            <img src="./icons/html.png" alt="Icono de HTML">
-            <span class="text-[1.3rem] font-bold text-[#f0f6ff]">HTML</span>
-        </div>
-
-        <div class="w-[115px] h-[115px] flex items-center flex-col gap-[5px] justify-center bg-[#9AB6FF] border-[#9AB6FF] border-[1px] bg-opacity-[30%] rounded-[20px] shadow-[rgba(0,0,0,0.25)_3px_5px]">
-            <img src="./icons/css.png" alt="Icono de CSS">
-            <span class="text-[1.3rem] font-bold text-[#f0f6ff]">CSS</span>
-        </div>
-
-        <div class="w-[115px] h-[115px] flex items-center flex-col gap-[5px] justify-center bg-[#9AB6FF] border-[#9AB6FF] border-[1px] bg-opacity-[30%] rounded-[20px] shadow-[rgba(0,0,0,0.25)_3px_5px]">
-            <img src="./icons/js.png" alt="Icono de JS">
-            <span class="text-[1.3rem] font-bold text-[#f0f6ff]">JS</span>
-        </div>
-
-        <div class="w-[115px] h-[115px] flex items-center flex-col gap-[5px] justify-center bg-[#9AB6FF] border-[#9AB6FF] border-[1px] bg-opacity-[30%] rounded-[20px] shadow-[rgba(0,0,0,0.25)_3px_5px]">
-            <img src="./icons/sass.png" alt="Icono de SASS">
-            <span class="text-[1.3rem] font-bold text-[#f0f6ff]">SASS</span>
-        </div>
-
-        <div class="w-[115px] h-[115px] flex items-center flex-col gap-[5px] justify-center bg-[#9AB6FF] border-[#9AB6FF] border-[1px] bg-opacity-[30%] rounded-[20px] shadow-[rgba(0,0,0,0.25)_3px_5px]">
-            <img src="./icons/bootstrap.png" alt="Icono de Bootstrap">
-            <span class="text-[1.3rem] font-bold text-[#f0f6ff]">Boostrap</span>
-        </div>
-
-        <div class="w-[115px] h-[115px] flex items-center flex-col gap-[5px] justify-center bg-[#9AB6FF] border-[#9AB6FF] border-[1px] bg-opacity-[30%] rounded-[20px] shadow-[rgba(0,0,0,0.25)_3px_5px]">
-            <img src="./icons/tailwind.png" alt="Icono de TailwindCSS">
-            <span class="text-[1.3rem] font-bold text-[#f0f6ff]">Tailwind</span>
-        </div>
-
-        <div class="w-[115px] h-[115px] flex items-center flex-col gap-[5px] justify-center bg-[#9AB6FF] border-[#9AB6FF] border-[1px] bg-opacity-[30%] rounded-[20px] shadow-[rgba(0,0,0,0.25)_3px_5px]">
-            <img src="./icons/git.png" alt="Icono de Git">
-            <span class="text-[1.3rem] font-bold text-[#f0f6ff]">GIT</span>
-        </div>
-
-        <div class="w-[115px] h-[115px] flex items-center flex-col gap-[5px] justify-center bg-[#9AB6FF] border-[#9AB6FF] border-[1px] bg-opacity-[30%] rounded-[20px] shadow-[rgba(0,0,0,0.25)_3px_5px]">
-            <img src="./icons/react.png" alt="Icono de React">
-            <span class="text-[1.3rem] font-bold text-[#f0f6ff]">React</span>
-        </div>
-
-        <div class="w-[115px] h-[115px] flex items-center flex-col gap-[5px] justify-center bg-[#9AB6FF] border-[#9AB6FF] border-[1px] bg-opacity-[30%] rounded-[20px] shadow-[rgba(0,0,0,0.25)_3px_5px]">
-            <img src="./icons/nodejs.png" alt="Icono de Node">
-            <span class="text-[1.3rem] font-bold text-[#f0f6ff]">NodeJS</span>
-        </div>
-
-        <div class="w-[115px] h-[115px] flex items-center flex-col gap-[5px] justify-center bg-[#9AB6FF] border-[#9AB6FF] border-[1px] bg-opacity-[30%] rounded-[20px] shadow-[rgba(0,0,0,0.25)_3px_5px]">
-            <img src="./icons/mongodb.png" alt="Icono de MongoDB">
-            <span class="text-[1.3rem] font-bold text-[#f0f6ff]">MongoDB</span>
-        </div>
-
-        <div class="w-[115px] h-[115px] flex items-center flex-col gap-[5px] justify-center bg-[#9AB6FF] border-[#9AB6FF] border-[1px] bg-opacity-[30%] rounded-[20px] shadow-[rgba(0,0,0,0.25)_3px_5px]">
-            <img src="./icons/express.png" alt="Icono de Express">
-            <span class="text-[1.3rem] font-bold text-[#f0f6ff]">Express</span>
-        </div>
-
-        <div class="w-[115px] h-[115px] flex items-center flex-col gap-[5px] justify-center bg-[#9AB6FF] border-[#9AB6FF] border-[1px] bg-opacity-[30%] rounded-[20px] shadow-[rgba(0,0,0,0.25)_3px_5px]">
-            <img src="./icons/mysql.png" alt="Icono de MySQL">
-            <span class="text-[1.3rem] font-bold text-[#f0f6ff]">MySQL</span>
-        </div>
+        {tecnologies.map((tecnologie) => (
+            <div class="w-[115px] h-[115px] flex items-center flex-col gap-[5px] justify-center bg-[#9AB6FF] border-[#9AB6FF] border-[1px] bg-opacity-[30%] rounded-[20px] shadow-[rgba(0,0,0,0.25)_3px_5px]">
+            <img src={tecnologie.icon} alt="Icono de HTML">
+            <span class="text-[1.1rem] font-bold text-[#f0f6ff]">{tecnologie.name}</span>
+            </div>
+        ))}
     </div>
     </div>
 </div>

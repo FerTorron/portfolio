@@ -4,22 +4,30 @@
 <div class="w-[100%] mt-[100px] flex items-center justify-between px-[147px]">
     <div class="w-[100%] flex items-start justify-center flex-col gap-[50px]">
         <span class="text-[2.5rem] text-[#EFF5FF]  font-bold flex items-center gap-3 justify-center"><img class="w-[35px] h-[35px]" src="./mail.svg" alt="Icono de Mail"> Contacto</span>
-    <div class="flex items-center justify-center w-[100%]">
-        <div class="w-[70%] h-[400px] relative px-[50px] py-[30px] flex items-center justify-evenly flex-col bg-[#9AB6FF] border-[#9AB6FF] border-[1px] bg-opacity-[30%] rounded-[20px] shadow-[rgba(0,0,0,0.25)_3px_5px]">
-            <span class="text-[2rem] text-center font-bold text-[#f0f6ff]">Me encuentro en búsqueda de nuevas oportunidades</span>
-            <div class="flex items-center justify-center gap-[65px] w-[100%]">
-                <div class="bg-[#9AB6FF] border-[#9AB6FF] border-[1px] bg-opacity-[30%] rounded-[20px] shadow-[rgba(0,0,0,0.25)_3px_5px] px-[30px] py-[8px]"><span class="text-[1.3rem] font-bold text-[#f0f6ff]">fertorron21@gmail.com</span></div>
-                <div class="flex items-center justify-center gap-[25px]">
-                    <div class="bg-[#9AB6FF] border-[#9AB6FF] border-[1px] bg-opacity-[30%] rounded-[20px] shadow-[rgba(0,0,0,0.25)_3px_5px] px-[15px] py-[8px] cursor-pointer hover:bg-[#4760A1] hover:translate-y-[-5px] transition-all"><img class="w-[35px] h-[35px]" src="./send.svg" alt="Icono de Avion de papel"></div>
-                    <div class="bg-[#9AB6FF] border-[#9AB6FF] border-[1px] bg-opacity-[30%] rounded-[20px] shadow-[rgba(0,0,0,0.25)_3px_5px] px-[15px] py-[8px] cursor-pointer hover:bg-[#4760A1] hover:translate-y-[-5px] transition-all"><img class="w-[35px] h-[35px]" src="./copy.svg" alt="Icono de Portapapeles"></div>
+        <div class="flex items-center justify-center w-[100%]">
+            <div class="w-[70%] h-[400px] relative px-[50px] py-[30px] flex items-center justify-evenly flex-col bg-[#9AB6FF] border-[#9AB6FF] border-[1px] bg-opacity-[30%] rounded-[20px] shadow-[rgba(0,0,0,0.25)_3px_5px]">
+                <span class="text-[2rem] text-center font-bold text-[#f0f6ff]">Me encuentro en búsqueda de nuevas oportunidades</span>
+                <div class="flex items-center justify-center gap-[65px] w-[100%]">
+                    <div class="bg-[#9AB6FF] border-[#9AB6FF] border-[1px] bg-opacity-[30%] rounded-[20px] shadow-[rgba(0,0,0,0.25)_3px_5px] px-[30px] py-[8px]"><span class="text-[1.3rem] font-bold text-[#f0f6ff]">fertorron21@gmail.com</span></div>
+                    <div class="flex items-center justify-center gap-[25px]">
+                        <a href="mailto:fertorron21@gmail.com" class="bg-[#9AB6FF] border-[#9AB6FF] border-[1px] bg-opacity-[30%] rounded-[20px] shadow-[rgba(0,0,0,0.25)_3px_5px] px-[15px] py-[8px] cursor-pointer hover:bg-[#4760A1] hover:translate-y-[-5px] transition-all"><img class="w-[35px] h-[35px]" src="./send.svg" alt="Icono de Avion de papel"></a>
+                        <a id="copyEmail" class="bg-[#9AB6FF] border-[#9AB6FF] border-[1px] bg-opacity-[30%] rounded-[20px] shadow-[rgba(0,0,0,0.25)_3px_5px] px-[15px] py-[8px] cursor-pointer hover:bg-[#4760A1] hover:translate-y-[-5px] transition-all"><img class="w-[35px] h-[35px]" src="./copy.svg" alt="Icono de Portapapeles"></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="flex items-center justify-center w-[100%] gap-[30px] mb-[30px]">
-        <a target="_blank" href="https://github.com/FerTorron"><img class="w-[35px] h-[35px]" src="./github.svg" alt="Icono de Github"></a>
-        <a target="_blank" href="https://www.linkedin.com/in/fertorron/"><img class="w-[35px] h-[35px]" src="./linkedin.svg" alt="Icono de Linkedin"></a>
-        <a target="_blank" href="https://www.instagram.com/fer_torron/"><img class="w-[35px] h-[35px]" src="./instagram.svg" alt="Icono de Instagram"></a>
-    </div>
+        <div class="flex items-center justify-center w-[100%] gap-[30px] mb-[30px]">
+            <a target="_blank" href="https://github.com/FerTorron"><img class="w-[35px] h-[35px]" src="./github.svg" alt="Icono de Github"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/fertorron/"><img class="w-[35px] h-[35px]" src="./linkedin.svg" alt="Icono de Linkedin"></a>
+            <a target="_blank" href="https://www.instagram.com/fer_torron/"><img class="w-[35px] h-[35px]" src="./instagram.svg" alt="Icono de Instagram"></a>
+        </div>
     </div>
 </div>
+
+<script>
+document.getElementById('copyEmail').addEventListener('click', function() {
+    const email = 'fertorron21@gmail.com';
+    navigator.clipboard.writeText(email)
+});
+</script>
+

@@ -1,13 +1,4 @@
 ---
-import Eclipse from '../components/Eclipse.astro';
-import Navbar from '../components/Navbar.astro';
-import Inicio from '../components/Inicio.astro'
-import SobreMi from '../components/SobreMi.astro';
-import Tecnologias from '../components/Tecnologias.astro';
-import Social from '../components/Social.astro';
-import Proyectos from '../components/Proyectos.astro';
-import Contacto from '../components/Contacto.astro';
-
 interface Props {
 	title: string;
 }
@@ -26,15 +17,7 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body class="font-spaceGrotesk">
-		<Navbar />
-		<Social />
-		<Inicio />
-		<SobreMi />
-		<Tecnologias />
-		<Proyectos />
-		<Contacto />
-		<!-- <slot /> -->
-		<Eclipse />
+		<slot />
 	</body>
 </html>
 <style is:global>
