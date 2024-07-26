@@ -6,7 +6,7 @@ const projects = [
         image: "./projects/distridonto.webp",
         tech: ["mongodb", "nodejs", "express", "react", "tailwind"],
         github: "",
-        link: ""
+        link: "https://distridonto.vercel.app/"
     },
     {
         title: "Servicios Ya",
@@ -22,7 +22,7 @@ const projects = [
         image: "./projects/noa.webp",
         tech: ["postgree", "nodejs", "prisma", "react", "nextjs"],
         github: "https://github.com/FerTorron/Noa---Never-One-Alone",
-        link: ""
+        link: "https://s14-09-ft-node-react.vercel.app/"
     },
     {
         title: "ComicNest",
@@ -46,7 +46,7 @@ const projects = [
         image: "./projects/melisa.webp",
         tech: ["react"],
         github: "",
-        link: ""
+        link: "https://www.melisaguevara.com/"
     },
     {
         title: "Cotización Argentina",
@@ -54,7 +54,7 @@ const projects = [
         image: "./projects/cotizacion.webp",
         tech: ["react"],
         github: "https://github.com/FerTorron/Cotizacion-Argentina",
-        link: ""
+        link: "https://cotizacion-argentina.netlify.app/"
     },
     {
         title: "BikeStore",
@@ -62,7 +62,7 @@ const projects = [
         image: "./projects/bikestore.webp",
         tech: ["react", "firebase"],
         github: "https://github.com/FerTorron/BikeStore",
-        link: ""
+        link: "https://bikestore-ft.netlify.app/"
     },
     {
         title: "MotorStore",
@@ -70,7 +70,7 @@ const projects = [
         image: "./projects/motorstore.webp",
         tech: ["html", "css", "js"],
         github: "https://github.com/FerTorron/MotorStore",
-        link: ""
+        link: "https://motorstore.netlify.app/"
     },
     {
         title: "Ciudad ITA",
@@ -78,31 +78,31 @@ const projects = [
         image: "./projects/ciudadita.webp",
         tech: ["html", "css", "js", "bootstrap"],
         github: "https://github.com/FerTorron/CiudadITA",
-        link: ""
+        link: "https://ciudadita.netlify.app/"
     }
 ];
 ---
 
-<div class="w-[100%] mt-[100px] flex items-center justify-between px-[147px]">
-    <div class="flex items-start justify-center flex-col gap-[50px]">
-        <span class="text-[2.5rem] text-[#EFF5FF]  font-bold flex items-center gap-3 justify-center"><img class="w-[35px] h-[35px]" src="./code.svg" alt="Icono de Codigo"> Proyectos</span>
-    <div class="flex items-center justify-start gap-[50px] w-[100%] flex-wrap">
-      {projects.map((project) => (
-        <div class="w-[100%] md:w-[45%] h-[480px] relative gap-[10px] px-[50px] py-[30px] flex items-start flex-col bg-[#9AB6FF] border-[#9AB6FF] border-[1px] bg-opacity-[30%] rounded-[20px] shadow-[rgba(0,0,0,0.25)_3px_5px]">
-          <span class="text-[1.8rem] font-bold text-[#f0f6ff]">{project.title}</span>
-          <img class="w-full h-[250px] object-center object-cover" src={project.image} alt={`Captura de pantalla del proyecto ${project.title}`} />
-          <p class="text-[1.2rem] text-[#EFF5FF] font-normal">{project.description}</p>
-          <div class="flex items-start justify-center gap-[10px] mt-[10px]">
-            {project.tech.map((tech) => (
-              <img class="w-[30px] h-[33px]" src={`./icons/${tech}.png`} alt={`Logo de ${tech}`} />
-            ))}
-          </div>
-          <div class="flex items-center justify-center absolute bottom-[20px] right-[20px] gap-[10px]">
-            <a target="_blank" href={project.github}><img class="w-[35px] h-[35px]" src="./github.svg" alt="Icono de Github" /></a>
-            <a target="_blank" href={project.link}><img class="w-[35px] h-[35px]" src="./link.svg" alt="Icono de Link" /></a>
-          </div>
+<div class="w-[100%] mt-[100px] flex items-center justify-center">
+    <div class="w-[80%] flex items-start justify-center flex-col gap-[50px]">
+        <span class="text-4xl lg:text-5xl text-[#EFF5FF]  font-bold flex items-center gap-3 justify-center"><img class="w-[35px] h-[35px]" src="./code.svg" alt="Icono de Codigo"> Proyectos</span>
+        <div class="flex items-center justify-center lg:justify-start gap-[50px] w-[100%] flex-wrap">
+        {projects.map((project) => (
+            <div class="hover:translate-y-[-5px] transition-all cursor-pointer hover:bg-[#4760A1] w-[100%] md:w-[45%] h-[570px] lg:h-[480px] relative gap-[10px] px-[50px] py-[30px] flex items-start flex-col bg-[#9AB6FF] border-[#9AB6FF] border-[1px] bg-opacity-[30%] rounded-[20px] shadow-[rgba(0,0,0,0.25)_3px_5px]">
+            <span class="text-[1.8rem] font-bold text-[#f0f6ff]">{project.title}</span>
+            <img class="w-full h-[250px] object-center object-cover" src={project.image} alt={`Captura de pantalla del proyecto ${project.title}`} />
+            <p class="text-[1.2rem] text-[#EFF5FF] font-normal">{project.description}</p>
+            <div class="flex items-start justify-center gap-[10px] mt-[10px]">
+                {project.tech.map((tech) => (
+                <img class="w-[30px] h-[33px]" src={`./icons/${tech}.png`} alt={`Logo de ${tech}`} />
+                ))}
+            </div>
+            <div class="flex items-center justify-center absolute bottom-[20px] right-[20px] gap-[10px]">
+                <a target="_blank" href={project.github}><img class="w-[35px] h-[35px]" src="./github.svg" alt="Icono de Github" /></a>
+                <a target="_blank" href={project.link}><img class="w-[35px] h-[35px]" src="./link.svg" alt="Icono de Link" /></a>
+            </div>
+            </div>
+        ))}
         </div>
-      ))}
-    </div>
     </div>
 </div>
