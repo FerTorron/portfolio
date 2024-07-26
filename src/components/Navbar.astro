@@ -1,10 +1,11 @@
 ---
-
+// bg-[#4461ac] md:bg-none bg-clip-padding backdrop-filter backdrop-blur-lg md:backdrop-blur-none bg-opacity-80 md:bg-opacity-0 border md:border-none border-gray-100 rounded-[25px] md:rounded-none shadow-[rgba(0,0,0,0.25)_3px_5px] md:shadow-none
 ---
 
 <header class="w-[100%] h-[65px] flex items-center justify-center fixed top-[15px] z-[150]">
-    <nav class="w-[60%] h-[100%] px-[63px] bg-[#9AB6FF] bg-blue-500 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-100 top-[20px] rounded-[35px] shadow-[rgba(0,0,0,0.25)_3px_5px]">
-        <ul class="h-[100%] flex items-center justify-between">
+    <nav class="w-[60px] h-[50px] md:w-[80%] lg:w-[60%] md:h-[100%] md:px-[63px] absolute left-3 md:left-0 md:static cursor-pointer md:cursor-default bg-[#9AB6FF] bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-100 rounded-[35px] shadow-[rgba(0,0,0,0.25)_3px_5px] flex items-center justify-center">
+        <img id="hamburgerMenu" class="w-[20px] md:hidden" src="./menu.svg" alt="Menu hamburguesa">
+        <ul id="navMenu" class="h-auto py-6 px-2 md:px-0 md:py-0 md:h-[100%] w-[200px] md:w-full flex justify-center md:items-center md:justify-between flex-col md:flex-row absolute md:static top-[60px] left-0 md:top-0 opacity-0 md:opacity-100 transition-opacity border md:border-none border-gray-100 rounded-[25px] md:rounded-none shadow-[rgba(0,0,0,0.25)_3px_5px] md:shadow-none bg-background md:bg-[transparent] bg-opacity-80 md:bg-opacity-0">
             <li class="text-[1.2rem] font-bold text-[#f0f6ff] px-[10px] py-[10px] rounded-[10px] hover:opacity-[0.7] hover:cursor-pointer hover:bg-background transition-[.3s]">Inicio</li>
             <li class="text-[1.2rem] font-bold text-[#f0f6ff] px-[10px] py-[10px] rounded-[10px] hover:opacity-[0.7] hover:cursor-pointer hover:bg-background transition-[.3s]">Sobre mí</li>
             <li class="text-[1.2rem] font-bold text-[#f0f6ff] px-[10px] py-[10px] rounded-[10px] hover:opacity-[0.7] hover:cursor-pointer hover:bg-background transition-[.3s]">Proyectos</li>
@@ -12,3 +13,19 @@
         </ul>
     </nav>
 </header>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const hamburgerMenu = document.getElementById('hamburgerMenu');
+        const navMenu = document.getElementById('navMenu');
+        hamburgerMenu.addEventListener('click', function() {
+            if (navMenu.classList.contains('opacity-0')) {
+                navMenu.classList.remove('opacity-0');
+                navMenu.classList.add('opacity-100');
+            } else {
+                navMenu.classList.remove('opacity-100');
+                navMenu.classList.add('opacity-0');
+            }
+        });
+    });
+</script>

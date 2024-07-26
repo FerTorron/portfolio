@@ -2,7 +2,22 @@
 
 ---
 
-<div class="w-[80px] h-[200px] bg-[#9AB6FF] bg-blue-500 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-100 top-[35%] rounded-[35px] shadow-[rgba(0,0,0,0.25)_3px_5px] hidden md:flex items-center justify-around flex-col fixed right-[25px] z-[150]">
+<div id="social-icons" class="w-[80px] h-[200px] bg-[#9AB6FF] bg-blue-500 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 border border-gray-100 top-[35%] rounded-[35px] shadow-[rgba(0,0,0,0.25)_3px_5px] hidden md:flex items-center justify-around flex-col fixed right-[-500px] z-[150] duration-500">
         <a target="_blank" href="https://github.com/FerTorron"><img class="w-[35px] h-[35px]" src="./github.svg" alt="Icono de Github"></a>
         <a target="_blank" href="https://www.linkedin.com/in/fertorron/"><img class="w-[35px] h-[35px]" src="./linkedin.svg" alt="Icono de Linkedin"></a>
 </div>
+
+<script>
+        if (typeof window !== 'undefined') {
+            window.addEventListener('scroll', () => {
+                const socialIcons = document.getElementById('social-icons');
+                if (window.scrollY > 100) { // Ajusta el valor según tus necesidades
+                    socialIcons.classList.remove('right-[-500px]');
+                    socialIcons.classList.add('right-[25px]');
+                } else {
+                    socialIcons.classList.remove('right-[25px]');
+                    socialIcons.classList.add('right-[-500px]');
+                }
+            });
+        }
+</script>
