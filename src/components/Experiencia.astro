@@ -2,13 +2,33 @@
 const jobs = [
     {
         title: "Freelance",
-        description: "Desarrollo de una Landing Page de Joyas",
-        date: "oct.2023 - nov.2023",
+        description: "Desarrollo de una Página web con sistema de usuarios, panel de administración y +5000 productos para una distribuidora de ferretería",
+        date: "jul.2024 - ago.2024",
+    },
+    {
+        title: "Simulación Laboral",
+        description: "NoCountry - Desarrollo de un Sistema de Turnos para la reparación de Computadoras",
+        date: "may.2024 - jun.2024",
+    },
+    {
+        title: "Simulación Laboral",
+        description: "NoCountry - Desarrollo de un Tinder de Videojuegos",
+        date: "mar.2024 - abr.2024",
+    },
+    {
+        title: "Simulación Laboral",
+        description: "NoCountry - Desarrollo de un Eccomerce para la venta de Comics Digitales",
+        date: "feb.2024 - mar.2024",
     },
     {
         title: "Freelance",
-        description: "Desarrollo de una",
+        description: "Desarrollo de una Landing Page para un microemprendimiento dede Joyería sustentable",
         date: "oct.2023 - nov.2023",
+    },
+    {
+        title: "Empleado de Mantenimiento",
+        description: "Tareas de Mantenimiento en una Mansion - Italia",
+        date: "may.2023 - nov.2023",
     },
 ];
 ---
@@ -16,21 +36,12 @@ const jobs = [
 <div id="experiencia" class="w-[100%] mt-[100px] flex items-center justify-center">
     <div class="w-[80%] flex items-start justify-center flex-col gap-[50px]">
         <span class="text-4xl lg:text-5xl text-[#EFF5FF]  font-bold flex items-center gap-3 justify-center"><img class="w-[35px] h-[35px]" src="./portfolio.svg" alt="Icono de Codigo"> Experiencia</span>
-        <div class="flex items-center justify-center lg:justify-start gap-[50px] w-[100%] flex-wrap">
+        <div class="flex items-center justify-center lg:justify-start gap-[35px] w-[100%] flex-wrap">
         {jobs.map((project) => (
-            <div class="hover:translate-y-[-5px] transition-all cursor-pointer hover:bg-[#4760A1] w-[100%] md:w-[45%] h-[570px] lg:h-[480px] relative gap-[10px] px-[50px] py-[30px] flex items-start flex-col bg-[#9AB6FF] border-[#9AB6FF] border-[1px] bg-opacity-[30%] rounded-[20px] shadow-[rgba(0,0,0,0.25)_3px_5px]">
-            <span class="text-[1.8rem] font-bold text-[#f0f6ff]">{project.title}</span>
-            <img class="w-full h-[250px] object-center object-cover" src={project.image} alt={`Captura de pantalla del proyecto ${project.title}`} />
-            <p class="text-[1.2rem] text-[#EFF5FF] font-normal">{project.description}</p>
-            <div class="flex items-start justify-center gap-[10px] mt-[10px]">
-                {project.tech.map((tech) => (
-                <img class="w-[30px] h-[33px]" src={`./icons/${tech}.png`} alt={`Logo de ${tech}`} />
-                ))}
-            </div>
-            <div class="flex items-center justify-center absolute bottom-[20px] right-[20px] gap-[10px]">
-                <a target="_blank" href={project.github}><img class="w-[35px] h-[35px]" src="./github.svg" alt="Icono de Github" /></a>
-                <a target="_blank" href={project.link}><img class="w-[35px] h-[35px]" src="./link.svg" alt="Icono de Link" /></a>
-            </div>
+            <div class="hover:translate-y-[-5px] transition-all cursor-pointer hover:bg-[#4760A1] w-[100%] md:w-[45%] h-auto pt-[60px] lg:pt-[30px] lg:min-h-[250px] relative gap-[10px] px-[50px] py-[30px] flex items-start justify-center flex-col bg-[#9AB6FF] border-[#9AB6FF] border-[1px] bg-opacity-[30%] rounded-[20px] shadow-[rgba(0,0,0,0.25)_3px_5px]">
+                <h3 class="text-[1.8rem] font-bold text-[#f0f6ff]">{project.title}</>
+                <span class="text-[1rem] font-bold text-[#3f3f3f] absolute top-3 right-3 py-1 rounded-[20px] px-3 bg-[#f0f6ff]">{project.date}</span>
+                <p class="text-[1.2rem] text-[#EFF5FF] font-normal">{project.description}</p>
             </div>
         ))}
         </div>
