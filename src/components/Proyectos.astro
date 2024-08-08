@@ -5,7 +5,7 @@ const projects = [
         description: "Un catálogo de ferreteria con sistema de usuarios",
         image: "./projects/distridonto.webp",
         tech: ["mongodb", "nodejs", "express", "react", "tailwind"],
-        github: "",
+        // github: "",
         link: "https://distridonto.vercel.app/"
     },
     {
@@ -14,7 +14,7 @@ const projects = [
         image: "./projects/serviciosya.webp",
         tech: ["mongodb", "nodejs", "express", "react"],
         github: "https://github.com/FerTorron/Sistema-de-Tickets",
-        link: ""
+        // link: ""
     },
     {
         title: "Noa - Never One Alone",
@@ -30,7 +30,7 @@ const projects = [
         image: "./projects/comicnest.webp",
         tech: ["mongodb", "nodejs", "express", "react"],
         github: "https://github.com/FerTorron/NoCountry-c16-65-ft-node",
-        link: ""
+        // link: ""
     },
     {
         title: "Lans Accesorios",
@@ -38,14 +38,14 @@ const projects = [
         image: "./projects/lans.webp",
         tech: ["mongodb", "nodejs", "express", "handlebars"],
         github: "https://github.com/FerTorron/lans-accesorios",
-        link: ""
+        // link: ""
     },
     {
         title: "Melisa Guevara",
         description: "Un sitio web para mostrar un catálogo de joyas",
         image: "./projects/melisa.webp",
         tech: ["react"],
-        github: "",
+        // github: "",
         link: "https://www.melisaguevara.com/"
     },
     {
@@ -85,7 +85,7 @@ const projects = [
 
 <div id="proyectos" class="w-[100%] mt-[100px] flex items-center justify-center">
     <div class="w-[80%] flex items-start justify-center flex-col gap-[50px]">
-        <span class="text-4xl lg:text-5xl text-[#EFF5FF]  font-bold flex items-center gap-3 justify-center"><img class="w-[35px] h-[35px]" src="./code.svg" alt="Icono de Codigo"> Proyectos</span>
+        <span class="text-4xl lg:text-5xl text-[#EFF5FF]  font-bold flex items-center gap-3 justify-center"><img loading="lazy" class="w-[35px] h-[35px]" src="./code.svg" alt="Icono de Codigo"> Proyectos</span>
         <div class="flex items-center justify-center lg:justify-start gap-[50px] w-[100%] flex-wrap">
         {projects.map((project) => (
             <div class="hover:translate-y-[-5px] transition-all cursor-pointer hover:bg-[#4760A1] w-[100%] md:w-[45%] h-[570px] lg:h-[480px] relative gap-[10px] px-[50px] py-[30px] flex items-start flex-col bg-[#9AB6FF] border-[#9AB6FF] border-[1px] bg-opacity-[30%] rounded-[20px] shadow-[rgba(0,0,0,0.25)_3px_5px]">
@@ -98,8 +98,10 @@ const projects = [
                 ))}
             </div>
             <div class="flex items-center justify-center absolute bottom-[20px] right-[20px] gap-[10px]">
-                <a target="_blank" href={project.github}><img class="w-[35px] h-[35px]" src="./github.svg" alt="Icono de Github" /></a>
-                <a target="_blank" href={project.link}><img class="w-[35px] h-[35px]" src="./link.svg" alt="Icono de Link" /></a>
+                {project.github ? <a target="_blank" href={project.github}><img class="w-[35px] h-[35px]" src="./github.svg" alt="Icono de Github" /></a> : null}
+                {project.link ? <a target="_blank" href={project.link}><img class="w-[35px] h-[35px]" src="./link.svg" alt="Icono de Link" /></a> : null}
+                {/* <a target="_blank" href={project.github}><img class="w-[35px] h-[35px]" src="./github.svg" alt="Icono de Github" /></a> */}
+                {/* <a target="_blank" href={project.link}><img class="w-[35px] h-[35px]" src="./link.svg" alt="Icono de Link" /></a> */}
             </div>
             </div>
         ))}
