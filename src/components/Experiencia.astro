@@ -1,8 +1,13 @@
 ---
 const jobs = [
+{
+        title: "Desarrollador Frontend",
+        description: "En TackrJobs formo parte del equipo de desarrollo frontend, trabajando con React y Next.js en la construcción de interfaces y flujos de usuario. Participé en el desarrollo de formularios validados con Zod, páginas informativas con Astro y una librería de componentes con Vite, React, Vitest y Storybook. También colaboro en integraciones con Apollo (GraphQL) y en la organización del equipo bajo metodologías ágiles.",
+        date: "sep.2024 - actualidad",
+    },
     {
         title: "Freelance",
-        description: "Desarrollo de una Página web con sistema de usuarios, panel de administración y +5000 productos para una distribuidora de ferretería",
+        description: "Diseñé y desarrollé un e-commerce completo para una distribuidora de artículos de ferretería, utilizando React, Vite, Node.js, Express y MongoDB. El proyecto me permitió aplicar mis conocimientos fullstack para crear una plataforma funcional y escalable, trabajando desde el frontend hasta la lógica del backend y la base de datos.",
         date: "jul.2024 - ago.2024",
     },
     {
@@ -22,7 +27,7 @@ const jobs = [
     },
     {
         title: "Freelance",
-        description: "Desarrollo de una Landing Page para un microemprendimiento dede Joyería sustentable",
+        description: "Desarrollé la landing page profesional de Melisa Guevara utilizando React y Vite, siendo responsable de la implementación principal junto a un equipo. Fue mi primera experiencia real con un cliente, donde aprendí a trabajar en conjunto, organizar tareas y entregar un producto final acorde a las necesidades del proyecto.",
         date: "oct.2023 - nov.2023",
     },
     {
@@ -36,14 +41,15 @@ const jobs = [
 <div id="experiencia" class="w-[100%] mt-[100px] flex items-center justify-center">
     <div class="w-[80%] flex items-start justify-center flex-col gap-[50px]">
         <span class="text-4xl lg:text-5xl text-[#EFF5FF]  font-bold flex items-center gap-3 justify-center"><img loading="lazy" class="w-[35px] h-[35px]" src="./portfolio.svg" alt="Icono de Codigo"> Experiencia</span>
-        <div class="flex items-center justify-center lg:justify-start gap-[35px] w-[100%] flex-wrap">
-        {jobs.map((project) => (
-            <div class="hover:translate-y-[-5px] transition-all cursor-pointer hover:bg-[#4760A1] w-[100%] md:w-[45%] h-auto pt-[60px] lg:pt-[30px] lg:min-h-[250px] relative gap-[10px] px-[50px] py-[30px] flex items-start justify-center flex-col bg-[#9AB6FF] border-[#9AB6FF] border-[1px] bg-opacity-[30%] rounded-[20px] shadow-[rgba(0,0,0,0.25)_3px_5px]">
-                <h3 class="text-[1.8rem] font-bold text-[#f0f6ff]">{project.title}</>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-[35px] w-[100%]">
+            {jobs.map((project) => (
+              <div class="hover:translate-y-[-5px] transition-all cursor-pointer hover:bg-[#4760A1] h-full pt-[60px] lg:pt-[30px] min-h-[250px] relative gap-[10px] px-[50px] py-[30px] flex flex-col justify-center bg-[#9AB6FF] border-[#9AB6FF] border-[1px] bg-opacity-[30%] rounded-[20px] shadow-[rgba(0,0,0,0.25)_3px_5px]">
+                <h3 class="text-[1.8rem] font-bold text-[#f0f6ff]">{project.title}</h3>
                 <span class="text-[1rem] font-bold text-[#3f3f3f] absolute top-3 right-3 py-1 rounded-[20px] px-3 bg-[#f0f6ff]">{project.date}</span>
                 <p class="text-[1.2rem] text-[#EFF5FF] font-normal">{project.description}</p>
-            </div>
-        ))}
-        </div>
+              </div>
+            ))}
+          </div>
+          
     </div>
 </div>
